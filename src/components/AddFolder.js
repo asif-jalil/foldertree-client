@@ -28,7 +28,7 @@ const AddFolder = ({ node, modalIsOpen, closeModal }) => {
     if (folder) {
       const folderInfo = { label: folder, children: [] };
       fetch(`http://localhost:5000/addFolder/${node._id}`, {
-        method: "POST",
+        method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
