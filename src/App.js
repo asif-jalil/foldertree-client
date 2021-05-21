@@ -1,6 +1,6 @@
+import { createContext, useEffect, useState } from "react";
 import "./App.css";
 import FolderTree from "./components/FolderTree";
-import { createContext, useEffect, useState } from "react";
 
 // const treeData = [
 //   {

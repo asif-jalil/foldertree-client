@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { folderContext } from "../App";
 import AddFolder from "./AddFolder";
 import FolderTree from "./FolderTree";
 import { ActionIcon, FolderWrapper } from "./Style";
@@ -8,6 +9,7 @@ const FolderNode = ({ node }) => {
   const hasChild = node.children?.length ? true : false;
   const isFolder = node.type === "folder" ? true : false;
   const [modalIsOpen, setIsOpen] = useState(false);
+  const {updateFolder, setUpdateFolder} = useContext(folderContext);
 
   function openModal() {
     setIsOpen(true);
@@ -29,7 +31,13 @@ const FolderNode = ({ node }) => {
         headers: {
           "Content-Type": "application/json",
         },
-      });
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        if(data){
+          setUpdateFolder(!updateFolder);
+        }
+      })
     }
     e.stopPropagation();
   };

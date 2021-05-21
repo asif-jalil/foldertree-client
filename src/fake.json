@@ -1,0 +1,64 @@
+{
+   "key": 0,
+   "type": "folder",
+   "label": "root",
+   "children": [
+      {
+         "key": "0",
+         "type": "folder",
+         "label": "Documents",
+         "children": [
+            {
+               "key": "0-0",
+               "type": "folder",
+               "label": "Document 1-1",
+               "children": [
+                  {
+                     "key": "0-1-1",
+                     "type": "file",
+                     "label": "Document-0-1.doc"
+                  },
+                  {
+                     "key": "0-1-2",
+                     "type": "file",
+                     "label": "Document-0-2.doc"
+                  },
+                  {
+                     "key": "0-1-3",
+                     "type": "file",
+                     "label": "Document-0-3.doc"
+                  },
+                  {
+                     "key": "0-1-4",
+                     "type": "file",
+                     "label": "Document-0-4.doc"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "key": "1",
+         "type": "folder",
+         "label": "Desktop",
+         "children": [
+            {
+               "key": "1-0",
+               "type": "file",
+               "label": "document1.doc"
+            },
+            {
+               "key": "0-0",
+               "type": "file",
+               "label": "document-2.doc"
+            }
+         ]
+      },
+      {
+         "key": "2",
+         "type": "folder",
+         "label": "Downloads",
+         "children": []
+      }
+   ]
+}
