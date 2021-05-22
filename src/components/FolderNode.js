@@ -25,7 +25,7 @@ const FolderNode = ({ node }) => {
 
   const handleFolderRemove = (e, folder) => {
     if (window.confirm("Are you sure to delete " + folder)) {
-      fetch(`http://localhost:5000/deleteFolder/${node._id}`, {
+      fetch(`https://guarded-refuge-63631.herokuapp.com/deleteFolder/${node._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

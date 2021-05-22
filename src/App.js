@@ -76,7 +76,7 @@ function App() {
   const [updateFolder, setUpdateFolder] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/folders")
+    fetch("https://guarded-refuge-63631.herokuapp.com/folders")
       .then((res) => res.json())
       .then((data) => setFolders(data));
   }, [updateFolder]);

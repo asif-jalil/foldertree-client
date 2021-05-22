@@ -27,7 +27,7 @@ const AddFolder = ({ node, modalIsOpen, closeModal }) => {
    const handleAddFolder = (e) => {
       if (folder) {
          const folderInfo = { label: folder, children: [] };
-         fetch(`http://localhost:5000/addFolder/${node._id}`, {
+         fetch(`https://guarded-refuge-63631.herokuapp.com/addFolder/${node._id}`, {
             method: "PATCH",
             headers: {
                "Content-Type": "application/json",
