@@ -17,7 +17,7 @@ This is a tree application. You can think it as google drive.
 If you want to add more feature or use it, just clone the repo
 
 ```
-git clone https://github.com/asif-jalil/foldertree-client
+git clone https://github.com/asif-jalil/foldertree-client.git
 cd foldertree-client
 npm install
 ```
