@@ -7,7 +7,6 @@ import { ActionIcon, FolderWrapper } from "./Style";
 const FolderNode = ({ node }) => {
   const [childVisible, setChildVisible] = useState(false);
   const hasChild = node.children?.length ? true : false;
-  const isFolder = node.type === "folder" ? true : false;
   const [modalIsOpen, setIsOpen] = useState(false);
   const {updateFolder, setUpdateFolder} = useContext(folderContext);
 
@@ -50,7 +49,7 @@ const FolderNode = ({ node }) => {
             <i className="fas fa-caret-right"></i>
           </div>
           <div className="folder-tree-head">
-            {isFolder ? <i className="fas fa-folder"></i> : <i className="fa fa-file"></i>} <span>{node.label}</span>
+          <i className="fas fa-folder"></i> <span>{node.label}</span>
           </div>
         </div>
         <div className="folder-action">
