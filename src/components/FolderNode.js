@@ -14,6 +14,7 @@ const FolderNode = ({ node }) => {
     setIsOpen(true);
   }
 
+  
   function closeModal() {
     setIsOpen(false);
   }
